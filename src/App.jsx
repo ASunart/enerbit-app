@@ -1,8 +1,8 @@
+import { AppRouter } from "./AppRouter"
+
 function App() {
   return (
-    <>
-      Enerbit
-    </>
+    <AppRouter/>
   )
 }
 
