@@ -14,7 +14,7 @@ export function AppRouter() {
         element={<LoginPage />}
       />
       <Route
-        path="/"
+        path="/cuestionario"
         element={<CuestionarioPage />}
       />
       <Route
