@@ -4,7 +4,7 @@ export function RadioOption({ label }) {
         <div className="flex items-center px-4 border border-gray-200 rounded-md w-full shadow-md">
             <label
                 htmlFor="bordered-radio-1"
-                className="w-full font-inter font-regular py-4 ms-2 text-xl font-medium text-gray-500 ">{label}</label>
+                className="w-full font-inter font-regular py-4 ms-2 text-xl font-medium text-gray-500">{label}</label>
             <input
                 id="bordered-radio-1"
                 type="radio"
