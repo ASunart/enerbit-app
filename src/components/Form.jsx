@@ -1,6 +1,6 @@
 export function Form() {
     const labelStyle = 'flex flex-col text-orange text-lg font-regular gap-4'
-    const inputStyle = 'border border-[#878787] rounded-lg px-4 py-2 text-left text-black'
+    const inputStyle = 'border border-[#878787] rounded-lg px-4 py-2 text-left text-black focus:outline-orange'
     return (
         <form className="flex flex-col w-10/12 gap-8 mb-48">
             <label htmlFor="email"
@@ -9,7 +9,7 @@ export function Form() {
                 <input type="email"
                     name="email"
                     placeholder="usuario@enerbit.com"
-                    className="border border-[#878787] rounded-lg px-4 py-2 text-left text-black" />
+                    className={inputStyle} />
             </label>
             <label htmlFor="password"
                 className={labelStyle}>
