@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { OnboardingPage } from "../Pages/OnboardingPage";
 import { OnBoardingAsistencia, OnboardingAjustes, OnboardingConsumo, OnboardingMetodo, OnboardingPagos, OnboardingVista } from "../Pages/Onboarding-steps";
+import { LoadingHome } from "../Pages/Onboarding-steps/LoadingHome";
 
 export function OnboardingRouter() {
     return (
@@ -32,6 +33,10 @@ export function OnboardingRouter() {
             <Route
                 path="/asistencia"
                 element={<OnBoardingAsistencia />}
+            />
+            <Route
+                path="/loading-home"
+                element={<LoadingHome />}
             />
         </Routes>
     )
