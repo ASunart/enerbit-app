@@ -1,5 +1,6 @@
 import { PrimaryButton } from "../../components/PrimaryButton";
 import { RadioOption } from "../../components/RadioOption";
+import { Link } from "react-router-dom";
 
 export function Pregunta2() {
     return (
@@ -16,7 +17,9 @@ export function Pregunta2() {
                 <RadioOption label='No tengo conocimiento' />
                 <RadioOption label='Entiendo parcialmente' />
                 <RadioOption label='Sí conozco del tema' />
-                <PrimaryButton label='Siguiente' />
+                <Link className="w-full" to='/cuestionario/pregunta-3'>
+                    <PrimaryButton label='Siguiente' />
+                </Link>
             </section>
         </>
     )

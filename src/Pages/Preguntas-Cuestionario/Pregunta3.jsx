@@ -1,5 +1,6 @@
 import { PrimaryButton } from "../../components/PrimaryButton";
 import { RadioOption } from "../../components/RadioOption";
+import { Link } from "react-router-dom";
 
 export function Pregunta3() {
     const cuadrosComparativos = <img src="../src/assets/images/cuadros-comparativos.webp" className="w-3/4" />
@@ -21,7 +22,9 @@ export function Pregunta3() {
                     <RadioOption label={graficosBarras} />
                     <p className="font-inter font-regular text-xl text-purple">Con los gráficos avanzados podrás ver datos más exactos sobre tu consumo.</p>
                 </article>
-                <PrimaryButton label='Siguiente' />
+                <Link className='w-full' to='/cuestionario/pregunta-4'>
+                    <PrimaryButton label='Siguiente' />
+                </Link>
             </section>
         </>
     )

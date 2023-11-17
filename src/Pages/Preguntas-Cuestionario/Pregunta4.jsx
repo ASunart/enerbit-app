@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PrimaryButton } from "../../components/PrimaryButton";
 import { RadioOption } from "../../components/RadioOption";
 
@@ -25,7 +26,9 @@ export function Pregunta4() {
             <section className="flex flex-col gap-20 items-center w-10/12 mx-auto mt-8">
                 <RadioOption label={labelEfectivo} />
                 <RadioOption label={labelTarjetas} />
-                <PrimaryButton label='Siguiente' />
+                <Link className='w-full' to='/cuestionario/principiante-screen'>
+                    <PrimaryButton label='Siguiente' />
+                </Link>
             </section>
         </>
     )

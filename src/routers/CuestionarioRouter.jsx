@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { CuestionarioPage } from "../Pages/CuestionarioPage";
 import { Pregunta1, Pregunta2, Pregunta3, Pregunta4 } from "../Pages/Preguntas-Cuestionario";
+import { PrincipianteScreen } from "../Pages/Preguntas-Cuestionario/PrincipianteScreen";
+import { ResultadoVisualizacion } from "../Pages/Preguntas-Cuestionario/ResultadoVisualizacion";
 
 export function CuestionarioRouter() {
     return (
@@ -24,6 +26,14 @@ export function CuestionarioRouter() {
             <Route
                 path="/pregunta-4"
                 element={<Pregunta4 />}
+            />
+            <Route
+                path="/principiante-screen"
+                element={<PrincipianteScreen />}
+            />
+            <Route
+                path="/resultados"
+                element={<ResultadoVisualizacion />}
             />
         </Routes>
     )
