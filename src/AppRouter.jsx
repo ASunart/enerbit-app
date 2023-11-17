@@ -4,7 +4,7 @@ import { FacturasPage } from "./Pages/FacturasPage";
 import { ConsumoPage } from "./Pages/ConsumoPage";
 import { AjustesPage } from "./Pages/AjustesPage";
 import { CuestionarioRouter } from "./routers/CuestionarioRouter";
-import { OnboardingRouter } from "./routers/OnboardginRouter";
+import { OnboardingRouter } from "./routers/OnboardingRouter";
 
 export function AppRouter() {
   return (
