@@ -17,7 +17,7 @@ export function OnboardingVista() {
                     className="self-center m-auto" />
                 <div>
                     <h1 className="font-inter font-bold text-3xl mx-7 text-orange relative">
-                    Cambia tu nivel de visualización
+                        Cambia tu nivel de visualización
                     </h1>
                     <p
                         className="font-inter font-regular text-purple text-2xl mx-7 mt-4">
@@ -26,7 +26,7 @@ export function OnboardingVista() {
                 </div>
 
                 <div className="grid grid-cols-2 items-center w-10/12 m-auto">
-                    <img src="../src/assets/icons/back-icon.svg" alt="Flecha volver atrás" onClick={previousStep}/>
+                    <img src="../src/assets/icons/back-icon.svg" alt="Flecha volver atrás" onClick={previousStep} />
                     <Link to='/onboarding/asistencia'>
                         <PrimaryButton label='Continuar' />
                     </Link>
