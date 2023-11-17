@@ -17,7 +17,7 @@ export function OnboardingVista() {
                     className="self-center m-auto" />
                 <div>
                     <h1 className="font-inter font-bold text-3xl mx-7 text-orange relative">
-                    Cambia tu nivel de visualización
+                    Cambia tu nivel de visualización ya
                     </h1>
                     <p
                         className="font-inter font-regular text-purple text-2xl mx-7 mt-4">
