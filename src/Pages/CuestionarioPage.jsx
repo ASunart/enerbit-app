@@ -1,4 +1,5 @@
 import { PrimaryButton } from "../components/PrimaryButton";
+import { Link } from "react-router-dom";
 
 export function CuestionarioPage() {
     return (
@@ -14,7 +15,9 @@ export function CuestionarioPage() {
                 <section className="flex flex-col h-full justify-end gap-32 mb-24">
                     <p className="font-inter font-regular text-gray-500 text-center text-xl">Ahora vamos a realizarte algunas preguntas para conocerte mejor y poder brindarte una experiencia más personalizada.
                     </p>
-                    <PrimaryButton label='Continuar' />
+                    <Link to='/cuestionario/pregunta-1'>
+                        <PrimaryButton label='Continuar' />
+                    </Link>
                 </section>
             </div>
         </>

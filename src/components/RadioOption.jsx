@@ -10,8 +10,8 @@ export function RadioOption({ label }) {
                 type="radio"
                 value=""
                 name="bordered-radio"
-                className="w-4 h-4 accent-orange bg-gray-100 border-gray-300 focus:border-orange"
-                 />
+                className="w-4 h-4 accent-orange bg-gray-100 border-gray-300 checked:border-orange"
+                />
         </div>
     )
 }
