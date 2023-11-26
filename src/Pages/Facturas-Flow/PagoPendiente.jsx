@@ -1,6 +1,6 @@
 import { AsistenciaBtn } from "../../components/AsistenciaBtn";
-import { FacturaCard } from "../../components/FacturaCard";
 import { NavBar } from "../../components/NavBar";
+import { PagadasCard } from "../../components/PagadasCard";
 import { SecondaryButton } from "../../components/SecondaryButton";
 
 export function PagoPendiente() {
@@ -15,7 +15,8 @@ export function PagoPendiente() {
                     <SecondaryButton label='Pendientes'/>
                     <SecondaryButton label='Pagadas'/>
                 </section>
-                <FacturaCard/>
+                {/* <FacturaCard/> */}
+                <PagadasCard />
             </main>
             <NavBar />
         </>
