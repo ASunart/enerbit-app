@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { LoginPage } from "./Pages/LoginPage";
-import { ConsumoPage } from "./Pages/ConsumoPage";
 import { AjustesPage } from "./Pages/AjustesPage";
 import { CuestionarioRouter } from "./routers/CuestionarioRouter";
 import { OnboardingRouter } from "./routers/OnboardingRouter";
 import { FacturasRouter } from "./routers/FacturasRouter";
+import { ConsumoRouter } from "./routers/ConsumoRouter";
 
 export function AppRouter() {
   return (
@@ -26,8 +26,8 @@ export function AppRouter() {
         element={<FacturasRouter />}
       />
       <Route
-        path="/consumo"
-        element={<ConsumoPage />}
+        path="/consumo/*"
+        element={<ConsumoRouter />}
       />
       <Route
         path="/ajustes"

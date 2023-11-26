@@ -2,7 +2,7 @@ import { navOptions } from "../const/navOptions"
 
 export function NavBar() {
     return (
-        <nav className="absolute bottom-0 w-full py-3 bg-[#f4f4f4]">
+        <nav className="bottom-0 w-full py-3 bg-[#f4f4f4] sticky">
             <ul className="grid grid-cols-3 place-items-center justify-center">
                 {
                     navOptions.map(({ label, image }) => {
