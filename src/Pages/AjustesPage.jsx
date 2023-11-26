@@ -1,5 +1,7 @@
 export function AjustesPage() {
-    return(
-        <h1>Ajustes</h1>
+    return (
+        <>
+            <h1>Ajustes</h1>
+        </>
     )
 }
