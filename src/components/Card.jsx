@@ -3,7 +3,7 @@ import { SecondaryButton } from "./SecondaryButton";
 export function Card() {
     const regularText = "font-inter font-regular text-gray-500 text-lg"
     return (
-        <article className="flex flex-col gap-4 px-5 py-7 shadow-md w-11/12 rounded-xl">
+        <article className="flex flex-col gap-4 px-5 py-7 shadow-md w-full rounded-xl">
             <span>
                 <h2 className="font-inter font-extrabold text-orange text-3xl">Mi casa</h2>
             </span>
