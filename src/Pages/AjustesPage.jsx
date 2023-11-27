@@ -1,10 +1,10 @@
-import { ConsumoFilter } from "../components/ConsumoFilter";
+import { ModalConsumo } from "../components/ModalConsumo";
 
 export function AjustesPage() {
     return (
         <>
             <h1>Ajustes</h1>
-            <ConsumoFilter/>
+            <ModalConsumo/>
         </>
     )
 }
