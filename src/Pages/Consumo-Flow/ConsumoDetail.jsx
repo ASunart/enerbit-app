@@ -24,7 +24,7 @@ export function ConsumoDetail() {
                     <p className="font-inter font-regular text-white text-lg"><strong>Este cálculo es aproximado.</strong> <span className="underline">conoce más aquí</span></p>
                     <img src="../src/assets/icons/warning-consumo.svg" alt="Advertencia" />
                 </section>
-                <ConsumoCard />
+                <ConsumoCard filter={filter} />
             </main>
             <NavBar />
         </>
