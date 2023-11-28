@@ -8,7 +8,7 @@ export function LoadingHome() {
     
     useEffect(() => {
         setTimeout(() => {
-            navigate('/')
+            navigate('/facturas')
         }, 3000)
     }, [])
 

@@ -1,9 +1,10 @@
 import { PrimaryButton } from "../../components/PrimaryButton";
 import { SecondaryButton } from "../../components/SecondaryButton";
+import { Link } from "react-router-dom";
 
 export function ResultadoVisualizacion () {
     return (
-        <section>
+        <section className="flex flex-col p-6">
             <div className="flex flex-col gap-3">
                 <h1 className="font-bold text-purple text-3xl">¡Muy bien! Has terminado de configurar tu  perfil
                 </h1>
@@ -34,7 +35,9 @@ export function ResultadoVisualizacion () {
 
                 <SecondaryButton label='Editar'/>
 
-                <PrimaryButton label="¡Es correcto!"/>
+                <Link className='w-full' to='/cuestionario/checked'>
+                    <PrimaryButton label="¡Es correcto!"/>
+                </Link>
             </div>
 
         </section>

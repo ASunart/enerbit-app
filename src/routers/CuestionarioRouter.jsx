@@ -3,6 +3,7 @@ import { CuestionarioPage } from "../Pages/CuestionarioPage";
 import { Pregunta1, Pregunta2, Pregunta3, Pregunta4 } from "../Pages/Preguntas-Cuestionario";
 import { PrincipianteScreen } from "../Pages/Preguntas-Cuestionario/PrincipianteScreen";
 import { ResultadoVisualizacion } from "../Pages/Preguntas-Cuestionario/ResultadoVisualizacion";
+import { Checked } from "../Pages/Preguntas-Cuestionario/Checked";
 
 export function CuestionarioRouter() {
     return (
@@ -34,6 +35,10 @@ export function CuestionarioRouter() {
             <Route
                 path="/resultados"
                 element={<ResultadoVisualizacion />}
+            />
+            <Route
+                path="/checked"
+                element={<Checked />}
             />
         </Routes>
     )

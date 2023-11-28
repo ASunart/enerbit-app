@@ -10,9 +10,9 @@ export function OnboardingPage() {
                 />
                 <h1 className="font-inter font-regular text-3xl mt-56 ml-7 w-min text-orange relative">¡Bienvenido, <span className="font-bold">Darío</span>!</h1>
                 <p
-                    className="font-inter font-regular text-purple text-2xl ml-7 mt-16"
+                    className="font-inter font-regular text-purple text-2xl ml-7 mt-24"
                 >Antes de comenzar, quisiéramos contarte un poco de todo lo que podrás hacer con enerBit.</p>
-                <div className="flex flex-col gap-2 w-10/12 m-auto">
+                <div className="flex flex-col gap-4 w-10/12 m-auto">
                     <Link to='/onboarding/pagos'>
                         <PrimaryButton label='Continuar' />
                     </Link>
