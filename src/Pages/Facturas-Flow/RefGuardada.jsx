@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PrimaryButton } from "../../components/PrimaryButton";
 
 export function RefGuardada () {
@@ -9,7 +10,9 @@ export function RefGuardada () {
                     Se ha guardado tu referencia de pago de <span className="font-bold">Factura Septiembre</span> en tu galeria de fotos
                 </h1>
                 <div className="w-full flex flex-col gap-4">
+                    <Link to='/facturas/factura-pendiente'>
                     <PrimaryButton label='Terminar'/>
+                    </Link>
                     <button className="font-inter font-medium text-lg text-orange bg-white w-full py-3 rounded-lg">Abrir galeria de fotos</button>
                 </div>
             </div>

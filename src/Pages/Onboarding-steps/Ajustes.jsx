@@ -27,7 +27,7 @@ export function OnboardingAjustes() {
 
                 <div className="grid grid-cols-2 items-center w-10/12 m-auto">
                     <img src="../src/assets/icons/back-icon.svg" alt="Flecha volver atrás" onClick={previousStep}/>
-                    <Link to='/onboarding/asistencia'>
+                    <Link to='/onboarding/metodo-de-pago'>
                         <PrimaryButton label='Continuar' />
                     </Link>
                 </div>

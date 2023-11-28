@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { SecondaryButton } from "./SecondaryButton"
 
 export function PagadasCard() {
@@ -10,7 +11,9 @@ export function PagadasCard() {
                 <p className={pStyle}>por: <span className="text-purple font-semibold">Pedro</span></p>
                 <p className='font-inter font-semibold text-purple text-2xl text-right'>$169.000</p>
             </span>
-            <SecondaryButton label='Ver detalle' />
+            <Link to='/facturas/pagada-page'>
+                <SecondaryButton label='Ver detalle' />
+            </Link>
         </article>
     )
 }

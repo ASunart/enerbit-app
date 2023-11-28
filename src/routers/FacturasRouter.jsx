@@ -3,7 +3,9 @@ import { FacturasPage } from "../Pages/FacturasPage";
 import { DetalleFactura } from "../Pages/Facturas-Flow/DetalleFactura";
 import { RefPagoPage } from "../Pages/Facturas-Flow/RefPagoPage";
 import { PagoPendiente } from "../Pages/Facturas-Flow/PagoPendiente";
+import { PagadaPage } from "../Pages/Facturas-Flow/PagadaPage";
 import { RefGuardada } from "../Pages/Facturas-Flow/RefGuardada";
+import { FacturaPendiente } from "../Pages/Facturas-Flow/FacturaPendiente";
 
 export function FacturasRouter() {
     return (
@@ -17,6 +19,10 @@ export function FacturasRouter() {
                 element={<PagoPendiente />}
             />
             <Route
+                path="/pagada-page"
+                element={<PagadaPage />}
+            />
+            <Route
                 path="/detalle-factura"
                 element={<DetalleFactura />}
             />
@@ -27,6 +33,10 @@ export function FacturasRouter() {
             <Route
                 path="/referencia-guardada"
                 element={<RefGuardada />}
+            />
+            <Route
+                path="/factura-pendiente"
+                element={<FacturaPendiente />}
             />
         </Routes>
     )
