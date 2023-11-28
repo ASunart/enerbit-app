@@ -9,9 +9,9 @@ export function NavBar() {
             <ul className="grid grid-cols-3 place-items-center items-center">
                 {
                     navOptions.map(({ label, image, route, active }) => {
-                        const textColor = window.location.pathname === route ? 'text-orange' : 'text-gray-400'
+                        const textColor = window.location.pathname.includes(route) ? 'text-orange' : 'text-gray-400'
                         const navStyle =`flex flex-col items-center font-inter font-regular ${textColor} text-base gap-2`
-                        const imageColor = window.location.pathname === route ? active : image
+                        const imageColor = window.location.pathname.includes(route) ? active : image
                         return (
                             <NavLink key={label} to={route}>
                                 <li className={navStyle}>

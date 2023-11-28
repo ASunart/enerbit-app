@@ -5,10 +5,9 @@ import { NavBar } from "../../components/NavBar";
 import { PagadasCard } from "../../components/PagadasCard";
 import { FacturaCard } from "../../components/FacturaCard";
 
-export function PagoPendiente() {
+export function FacturaPendiente() {
     const [filter, setFilter] = useState('pendientes')
-
-    const text = 'Factura sin pagar'
+    const text = 'Factura generada por Darío el 15 de Septiembre del 2023 pero no ha sido pagada'
 
     const handleFilterChange = (e) => {
         const { target } = e

@@ -5,6 +5,7 @@ import { OnboardingRouter } from "./routers/OnboardingRouter";
 import { FacturasRouter } from "./routers/FacturasRouter";
 import { ConsumoRouter } from "./routers/ConsumoRouter";
 import { AjustesRouter } from "./routers/AjustesRouter";
+import { AsistenciaPage } from "./Pages/AsistenciaPage";
 
 export function AppRouter() {
   return (
@@ -32,6 +33,10 @@ export function AppRouter() {
       <Route
         path="/ajustes/*"
         element={<AjustesRouter />}
+      />
+      <Route
+        path="/asistencia"
+        element={<AsistenciaPage />}
       />
     </Routes>
   )
