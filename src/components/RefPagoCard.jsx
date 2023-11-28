@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import { PrimaryButton } from "./PrimaryButton"
 import { SecondaryButton } from "./SecondaryButton"
+import { Link } from "react-router-dom"
 
-export function RefPagoCard() {
+export function RefPagoCard({route}) {
     const titleStyle = 'font-inter font-medium text-purple text-2xl -mb-2'
     const pStyle = 'font-inter font-regular text-gray-500 text-2xl'
     return (
@@ -13,7 +15,9 @@ export function RefPagoCard() {
             <h3 className={titleStyle}>Referencia</h3>
             <p className={pStyle}>827365421221</p>
             <SecondaryButton label='Compartir' />
-            <PrimaryButton label='Guardar en galería de fotos' />
+            <Link to={route}>
+                <PrimaryButton label='Guardar en galería de fotos' />  
+            </Link>
         </article>
     )
 }

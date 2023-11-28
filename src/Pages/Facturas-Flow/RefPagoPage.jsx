@@ -17,7 +17,7 @@ export function RefPagoPage() {
                 <p className="font-inter font-semibold text-base text-gray-400">Pagos y facturas - <span className="text-purple">Mi casa</span></p>
                 <h1 className="font-inter font-extrabold text-orange text-[32px]">Referencia de pago </h1>
                 <p className={pStyle}><strong>¡Guarda estos datos!</strong> Te los pediran en tu corresponsal Bancolombia más cercano</p>
-                <RefPagoCard/>
+                <RefPagoCard route='/facturas/referencia-guardada'/>
             </main>
             <NavBar />
         </>
