@@ -6,6 +6,10 @@ export function FacturaCard() {
     return (
         <article className="flex flex-col gap-4 px-5 py-7 shadow-md w-full rounded-xl">
             <h1 className="font-inter font-extrabold text-orange text-[32px]">Factura Octubre</h1>
+            <section className="bg-[#ffe5e5] px-4 py-3 rounded-xl flex flex-row justify-between items-center">
+                <h3 className="font-inter font-medium text-[#E50505] text-2xl">Factura sin pagar</h3>
+                <img src="../src/assets/icons/warning-pago.svg" />
+            </section>
             <h3 className={titleStyle}>Total a pagar</h3>
             <h2 className="font-inter font-extrabold text-gray-400 text-3xl">$234,000.00</h2>
             <h3 className={titleStyle}>Fecha de vencimiento</h3>
