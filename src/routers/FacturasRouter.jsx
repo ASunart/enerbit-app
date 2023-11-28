@@ -3,6 +3,7 @@ import { FacturasPage } from "../Pages/FacturasPage";
 import { DetalleFactura } from "../Pages/Facturas-Flow/DetalleFactura";
 import { RefPagoPage } from "../Pages/Facturas-Flow/RefPagoPage";
 import { PagoPendiente } from "../Pages/Facturas-Flow/PagoPendiente";
+import { RefGuardada } from "../Pages/Facturas-Flow/RefGuardada";
 
 export function FacturasRouter() {
     return (
@@ -22,6 +23,10 @@ export function FacturasRouter() {
             <Route
                 path="/referencia-pago"
                 element={<RefPagoPage />}
+            />
+            <Route
+                path="/referencia-guardada"
+                element={<RefGuardada />}
             />
         </Routes>
     )
