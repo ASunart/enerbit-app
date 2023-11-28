@@ -30,7 +30,7 @@ export function ConsumoDetail() {
                 <img src="../src/assets/icons/back-icon.svg" alt="Atrás" onClick={previousStep}/>
                 <AsistenciaBtn />
             </header>
-            <main className="flex flex-col w-10/12 gap-4 mx-auto mt-6">
+            <main className="flex flex-col w-10/12 gap-4 mx-auto mt-6 mb-24">
                 <p className="font-inter font-semibold text-base text-gray-400">Consumo - <span className="text-purple">Mi casa</span></p>
                 <ConsumoFilter filter={filter} onChange={handleFilterChange} />
                 <section 
