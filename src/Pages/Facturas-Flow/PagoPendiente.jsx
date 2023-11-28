@@ -13,19 +13,28 @@ export function PagoPendiente() {
         setFilter(target.value)
     }
 
-    return(
+    return (
         <>
             <header className="w-10/12 items-center mx-auto mt-10">
                 <AsistenciaBtn />
             </header>
-            <main className="flex flex-col gap-3 w-10/12 mx-auto mt-6">
-            <p className="font-inter font-semibold text-base text-gray-400">Pagos y facturas - <span className="text-purple">Mi casa</span></p>
-                    <FacturasFilter filter={filter} onChange={handleFilterChange}/>
-                    {
-                        filter === 'pendientes' ? <FacturaCard/> : <PagadasCard />
-                    }                 
+            <main className="flex flex-col gap-3 w-10/12 mx-auto mt-6 h-[95vh]">
+                <p className="font-inter font-semibold text-base text-gray-400">Pagos y facturas - <span className="text-purple">Mi casa</span></p>
+                <FacturasFilter filter={filter} onChange={handleFilterChange} />
+                {
+                    filter === 'pendientes' ? <FacturaCard /> : <PagadasSection />
+                }
             </main>
             <NavBar />
+        </>
+    )
+}
+
+function PagadasSection() {
+    return (
+        <>
+                <PagadasCard />
+                <PagadasCard />
         </>
     )
 }
