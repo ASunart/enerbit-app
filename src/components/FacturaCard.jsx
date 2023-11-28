@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { PrimaryButton } from "./PrimaryButton"
 
 export function FacturaCard() {
@@ -16,7 +17,9 @@ export function FacturaCard() {
             <p className={pStyle}>Octubre 12 de 2023</p>
             <h3 className={titleStyle}>Método de pago</h3>
             <p className={pStyle}>Efectivo - Corresponsal Bancolombia</p>
+            <Link to='/facturas/detalle-factura'>
             <PrimaryButton label='Continuar' />
+            </Link>
         </article>
     )
 

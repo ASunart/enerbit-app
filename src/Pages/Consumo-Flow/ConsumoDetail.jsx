@@ -5,6 +5,7 @@ import { ConsumoCard } from "../../components/ConsumoCard";
 import { ConsumoFilter } from "../../components/ConsumoFilter";
 import { NavBar } from "../../components/NavBar";
 import { ModalConsumo } from "../../components/ModalConsumo";
+import { useNavigate } from "react-router-dom";
 
 export function ConsumoDetail() {
     const [filter, setFilter] = useState('mes')
@@ -19,11 +20,14 @@ export function ConsumoDetail() {
         setModal(prevState => !prevState)
     }
 
+    const navigate = useNavigate()
+    const previousStep = () => navigate(-1)
+
     return (
         <>
         <ModalConsumo modal={modal} onClose={toggleModal}/>
             <header className="grid grid-cols-2 w-10/12 items-center mx-auto mt-10">
-                <img src="../src/assets/icons/back-icon.svg" alt="Atrás" />
+                <img src="../src/assets/icons/back-icon.svg" alt="Atrás" onClick={previousStep}/>
                 <AsistenciaBtn />
             </header>
             <main className="flex flex-col w-10/12 gap-4 mx-auto mt-6">
