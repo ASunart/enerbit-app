@@ -1,8 +1,11 @@
-# React + Vite
+Prototipo trabajo Proyecto integrador 2 - enerBit para todos (Reto #1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Integrantes: 
+Isabela Cortes
+Samuel Ortiz
+Andrés Poveda
+Gabriel Salazar
+Juan Alejandro Solarte
+Guillermo Valencia
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Revisar el prototipo en mobile dimensiones (430 x 932)
