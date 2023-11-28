@@ -11,8 +11,8 @@ export function ConsumoPage() {
             <main className="flex flex-col gap-5 w-10/12 mx-auto mt-6">
                 <p className="font-inter font-semibold text-base text-gray-400">Consumo</p>
                 <h1 className="font-inter font-medium text-gray-500 text-2xl w-10/12">Selecciona una dirección para ver tu consumo</h1>
-                <Card />
-                <Card />
+                <Card title="Mi Casa" button='Ver consumo' route='/consumo/detalle-consumo'/>
+                <Card title='Mi Finca' button='Ver consumo' />
             </main>
             <NavBar/>
         </>
